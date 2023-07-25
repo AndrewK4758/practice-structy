@@ -21,8 +21,7 @@ c.right = f
 #   b     c
 #  / \     \
 # d   e     f
-
-
+ 
 def depth_first_values(root):
   if root == None:
     return []
