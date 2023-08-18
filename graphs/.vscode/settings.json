@@ -1,0 +1,7 @@
+{
+	"editor.tabSize": 2,
+	"editor.insertSpaces": false,
+	"editor.autoIndent": "none",
+	"editor.defaultFormatter": "ms-python.python",
+	"editor.detectIndentation": false
+}
