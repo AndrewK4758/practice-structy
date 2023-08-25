@@ -6,16 +6,16 @@ def prereqs_possible(num_courses, graph):
 		if dfs(graph, node, visited, temp=set()) == True:
 			return False
 	return True
-		
+
 def dfs(graph, cur, visited, temp):
 	print(temp, 'temp', visited, 'visit')
 	if cur in temp:
 		return True
 	if cur in visited:
 		return False
-	
+
 	temp.add(cur)
-		
+
 	for neighbor in graph[cur]:
 		if dfs(graph, neighbor, visited, temp):
 			return True
