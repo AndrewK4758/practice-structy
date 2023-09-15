@@ -10,7 +10,7 @@ def counting_change(amount, coins, i=0, memo={}):
     
     coin = coins[i]
     possible_combos = 0
-    for coin_count in range(0, (amount//coin)+1):
+    for coin_count in range(0, (amount//coin)+1): # the +1 makes the range inclusive of the last value
         next = amount - (coin * coin_count)
         possible_combos += counting_change(next, coins, i+1, memo)
     memo[keys] = possible_combos
